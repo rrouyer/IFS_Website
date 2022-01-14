@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="author" content="Remy Rouyer">
+
+<head>
+  <title> IFS Canvas </title>
+  <link rel="stylesheet"  type="text/css" href="../style/sandbox.css">
+</head>
+
+<body>
+  <h2>IFS Canvas </h2>
+
+  <div class="matrixClass" id="matrix">
+    <p>
+      <label for="0enabled">Enabled:</label>
+      <input type="checkbox" id="0enabled" name="0enabled" checked>
+
+      <label for="0A">0A:</label>
+      <input type="number" id="0A" name="0A" value="0" step="0.01">
+
+      <label for="0B">0B:</label>
+      <input type="number" id="0B" name="0B" value="0" step="0.01">
+
+      <label for="0C">0C:</label>
+      <input type="number" id="0C" name="0C" value="0" step="0.01">
+
+      <label for="0D">0D:</label>
+      <input type="number" id="0D" name="0D" value="0" step="0.01">
+
+      <label for="0E">0E:</label>
+      <input type="number" id="0E" name="0E" value="0" step="0.01">
+
+      <label for="0F">0F:</label>
+      <input type="number" id="0F" name="0F" value="0" step="0.01">
+
+      <label for="0xFunctionType">X Funct Type:</label>
+      <select name="0xFunctionType" id="0xFunctionType">
+        <option value="0">Linear</option>
+        <option value="1">Cos(X)</option>
+        <option value="2">Cos(Y)</option>
+        <option value="3">Sin(X)</option>
+        <option value="4">Sin(Y)</option>
+        <option value="5">Tan(X)</option>
+        <option value="6">Tan(Y)</option>
+        <option value="7">Sin(X),Cos(Y)</option>
+        <option value="8">Cos(X),Sin(Y)</option>
+        <option value="9">Sin(Cos(Y))</option>
+        <option value="10">Sin(Cos(X))</option>
+        <option value="11">Cos(Sin(Y))</option>
+        <option value="12">Cos(Sin(X))</option>
+        <option value="13">Sin(Cos(X)),Cos(Sin(Y))</option>
+        <option value="14">X^golden ratio</option>
+        <option value="15">Y^golden ratio</option>
+      </select>
+
+      <label for="1yFunctionType">Y Funct Type:</label>
+      <select name="1yFunctionType" id="1yFunctionType">
+        <option value="0">Linear</option>
+        <option value="1">Cos(X)</option>
+        <option value="2">Cos(Y)</option>
+        <option value="3">Sin(X)</option>
+        <option value="4">Sin(Y)</option>
+        <option value="5">Tan(X)</option>
+        <option value="6">Tan(Y)</option>
+        <option value="7">Sin(X),Cos(Y)</option>
+        <option value="8">Cos(X),Sin(Y)</option>
+        <option value="9">Sin(Cos(Y))</option>
+        <option value="10">Sin(Cos(X))</option>
+        <option value="11">Cos(Sin(Y))</option>
+        <option value="12">Cos(Sin(X))</option>
+        <option value="13">Sin(Cos(X)),Cos(Sin(Y))</option>
+        <option value="14">X^golden ratio</option>
+        <option value="15">Y^golden ratio</option>
+      </select>
+
+      <label for="0Percentage">0%:</label>
+      <input type="number" id="0Percentage" name="0Percentage" value="50" step="2">
+
+      <label for="0Color">0Color:</label>
+      <input type="color" id="0Color" name="0Color">
+
+    </p>
+    <p>
+      <label for="1enabled">Enabled:</label>
+      <input type="checkbox" id="1enabled" name="1enabled" checked>
+
+      <label for="1A">1A:</label>
+      <input type="number" id="1A" name="1A" value="0" step="0.01">
+
+      <label for="1B">1B:</label>
+      <input type="number" id="1B" name="1B" value="0" step="0.01">
+
+      <label for="1C">1C:</label>
+      <input type="number" id="1C" name="1C" value="0" step="0.01">
+
+      <label for="1D">1D:</label>
+      <input type="number" id="1D" name="1D" value="0" step="0.01">
+
+      <label for="1E">1E:</label>
+      <input type="number" id="1E" name="1E" value="0" step="0.01">
+
+      <label for="1F">1F:</label>
+      <input type="number" id="1F" name="1F" value="0" step="0.01">
+
+      <label for="1xFunctionType">X Funct Type:</label>
+      <select name="1xFunctionType" id="1xFunctionType">
+        <option value="0">Linear</option>
+        <option value="1">Cos(X)</option>
+        <option value="2">Cos(Y)</option>
+        <option value="3">Sin(X)</option>
+        <option value="4">Sin(Y)</option>
+        <option value="5">Tan(X)</option>
+        <option value="6">Tan(Y)</option>
+        <option value="7">Sin(X),Cos(Y)</option>
+        <option value="8">Cos(X),Sin(Y)</option>
+        <option value="9">Sin(Cos(Y))</option>
+        <option value="10">Sin(Cos(X))</option>
+        <option value="11">Cos(Sin(Y))</option>
+        <option value="12">Cos(Sin(X))</option>
+        <option value="13">Sin(Cos(X)),Cos(Sin(Y))</option>
+        <option value="14">X^golden ratio</option>
+        <option value="15">Y^golden ratio</option>
+      </select>
+
+      <label for="1yFunctionType">Y Funct Type:</label>
+      <select name="1yFunctionType" id="1yFunctionType">
+        <option value="0">Linear</option>
+        <option value="1">Cos(X)</option>
+        <option value="2">Cos(Y)</option>
+        <option value="3">Sin(X)</option>
+        <option value="4">Sin(Y)</option>
+        <option value="5">Tan(X)</option>
+        <option value="6">Tan(Y)</option>
+        <option value="7">Sin(X),Cos(Y)</option>
+        <option value="8">Cos(X),Sin(Y)</option>
+        <option value="9">Sin(Cos(Y))</option>
+        <option value="10">Sin(Cos(X))</option>
+        <option value="11">Cos(Sin(Y))</option>
+        <option value="12">Cos(Sin(X))</option>
+        <option value="13">Sin(Cos(X)),Cos(Sin(Y))</option>
+        <option value="14">X^golden ratio</option>
+        <option value="15">Y^golden ratio</option>
+      </select>
+
+      <label for="1Percentage">1%:</label>
+      <input type="number" id="1Percentage" name="1Percentage" value="50" step="2">
+
+      <label for="1Color">1Color:</label>
+      <input type="color" id="1Color" name="1Color">
+    </p>
+  </div>
+  <button id="addBtn" style = "float: right; margin-right: 15%; width: 7%;">Add Function</button>
+  <br>
+
+  <div class="paramsClass" id="params">
+    
+    <p>
+      <label for="iterations">Iterations:</label>
+      <input type="number" id="iterations" name="iterations" value="100000" step="10000">
+
+      <label for="magnitude">Magnitude:</label>
+      <input type="number" id="magnitude" name="magnitude" value="100" step="5">
+
+      <label for="xOffset">X Offset:</label>
+      <input type="number" id="xOffset" name="xOffset" value="0" step="5">
+
+      <label for="yOffset">Y Offset:</label>
+      <input type="number" id="yOffset" name="yOffset" value="0" step="5">
+      
+      <label for="autoSetUp">Auto set up:</label>
+      <input type="checkbox" id="autoSetUp" checked>
+      <br>
+      <br>
+      <label for="mirrorVertical">Mirror Vertical:</label>
+      <input type="checkbox" id="mirrorVertical">
+
+      <label for="mirrorHorizontal">Mirror Horizontal:</label>
+      <input type="checkbox" id="mirrorHorizontal">
+
+      <label for="overlap">Overlap:</label>
+      <input type="checkbox" id="overlap">
+    </p>
+
+    <p>
+
+      <label for="width">Width:</label>
+      <input type="number" id="width" name="width" value="800" step="100">
+
+      <label for="height">Height:</label>
+      <input type="number" id="height" name="height" value="800" step="100">
+
+      <label for="scale">Scale:</label>
+      <input type="number" id="scale" name="scale" value="2" step="1" min = 1>
+
+
+      <label for="backgroundFill">Fill Type:</label>
+      <select name="backgroundFill" id="backgroundFill">
+        <option value="0">Solid</option>
+        <option value="1">Linear Gradient Vert.</option>
+        <option value="2">Linear Gradient Hori.</option>
+        <option value="3">Radial</option>
+        <option value="4">Transparent</option>
+      </select>
+
+    </p>
+
+    <p>
+      <label for="bcolor0">Background Color 0:</label>
+      <input type="color" id="bColor0" name="bcolor0" value="#ffffff">
+
+      <label for="bcolor1">Background Color 1:</label>
+      <input type="color" id="bColor1" name="bcolor1">
+
+      <label for="weight">Weight:</label>
+      <input type="number" id="weight" name="weight" value="0" step=".05" min=0 max=1>
+
+      <p class = presetClass>
+        <label for="presets">Presets:</label>
+        <select name="presets" id="presets">
+          <option value="0">Select preset</option>
+          <option value="1">Barnsley</option>
+          <option value="2">Nebulus</option>
+          <option value="3">Butterfly</option>
+          <option value="4">ChainLink</option>
+          <option value="5">Weave</option>
+          <option value="6">Weave2</option>
+          <option value="7">Octopus</option>
+    
+          <option value="8">Quack</option>
+          <option value=9>Turbulance</option>
+        </select>
+        <button id="loadPresetBtn">Load Preset</button>
+        <br></p>
+    </p>
+  </div>
+  <div class ="controlClass" id = "control">
+    <p>
+      <button id="genBtn">Generate</button>
+      <button id="saveBtn">Save</button>
+      <br>
+      <br>
+      <label for="autoGen">Auto Generate:</label>
+      <input type="checkbox" id="autoGen">
+    </p>
+    <br>
+    
+    <form action = "../cgi-bin/cgi_ifs_gen.py"  method = "post" target = "_blank">
+      <input type = "hidden" name = "matrixOutput" id= "matrixOutput"/>
+      <input type = "hidden" name = "paramsOutput" id= "paramsOutput"/>
+      <input type = "submit" value = "Serverside Generation" /> 
+    </form>
+    
+</div>
+
+<div id="wall">
+  <canvas id="ifsCanvas" width="800" height="800"></canvas>
+</div>
+<p class="linkClass">
+  <a href="../index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="how.html">How IFS Works</a>
+  <a href="contactMe.html">Contact Me</a>
+</p>
+
+</body>
+
+<script src="../scripts/ifs.js"></script>
+
+</html>

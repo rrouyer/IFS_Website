@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>How IFS Work</title>
+    <link rel="stylesheet"  type="text/css" href="../style/how.css">
+  </head>
+  <body>
+    <h1> What are IFS </h1>
+    <p> IFS stands for interative function system. The system typically uses a linear transformation but I've also added serveral different function types</p>
+    <p>The matrix contains the coefficents of the functions and in order to make the image, a function of the system is chosen at random and used to transform the point. At every iteration, the place where the point is is then drawn.</p>
+    <p>This video from numberphile exlpains it quite well.</p>
+
+    <iframe src="https://www.youtube.com/embed/kbKtFN71Lfs" frameborder="2" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <h2> How to control </h2>
+    <p>I would suggest first starting off by selecting and loading a preset. Then you can generate the IFS image. Then you can change part of the matrix and generate again to
+      see how the changes to the matrix change the output image. By checking 'Auto generate', it will automatically genrate a new image everytime a parameter or part or the matrix changes.
+    </p>
+    <p>Enable checkbox next to each function is to enable it or remove it from being used in the system.<br> The percentage is to the right of each function is the liklihood of it being called. If the percentages sum to less than 100%, the last function in the system will take on the extra percentage. If the percentage sum goes past 100%, any of the functions after the 100% will have a 0% chance of being called.</p>
+    <p>Serverside generation is meant for when you want to create larger photos and all of the computation is done on the server side.</p>
+    <p>Scale is only used when serverside genration is used and it will scale down the image with bicubic scaling.</p> 
+    <a href="../index.html">Home</a>
+  </body>
+</html>

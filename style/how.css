@@ -1,0 +1,30 @@
+*{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+body {
+  background: rgb(34, 32, 44);
+  color: rgb(133, 185, 209);
+  margin-top: 20px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  font-size:400%;
+}
+p {
+  color: rgb(133, 185, 209);
+  font-size:300%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+iframe{
+  width: 500px;;
+  height: 350px;
+}
+a:link, a:visited{
+  font-size:200%;
+  color: rgb(133, 185, 209);
+}
+

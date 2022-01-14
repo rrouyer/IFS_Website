@@ -1,0 +1,98 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+h1,h2{
+  font-size:300%;
+  color: rgb(181, 225, 245);
+  text-align: center;
+  
+}
+body {
+  
+  color: rgb(133, 185, 209);
+  background-image: radial-gradient(rgb(80, 80, 80), rgb(10, 10, 10));;
+  margin-top: auto;
+  
+  margin-left: 2%;
+  margin-right: 2%;
+}
+input,select,button{
+  background-color: rgb(243, 208, 144);
+}
+.matrixClass {
+  background-color: rgba(204, 184, 184, 0.575);
+  border: 5px solid black;
+
+}
+.matrixClass p{
+  margin: 1% 1% 1% 1%;
+  color:black;
+  text-align: left;
+}
+.controlClass {
+  margin-right:10%;
+  float:right;
+  display: block;
+  background-color: rgba(120, 122, 182, 0.575);
+  border: 5px solid black;
+  width:20%;
+}
+.controlClass form, .controlClass p{
+  margin: 2% 2% 2% 2%;
+  color:black;
+  text-align: center;
+  font-size: larger;
+}
+.controlClass button{
+  width:40%;
+  height: 40px;
+  font-size:larger;
+}
+.controlClass input[type="checkbox"], .controlClass label{
+  
+  font-size:x-large;
+}
+.controlClass form input[type="submit"]{
+  height:40px;
+  font-size: larger;
+}
+.paramsClass {
+  margin:1% auto;
+  display: block;
+  background-color: rgba(204, 184, 184, 0.575);
+  border: 5px solid black;
+  
+}
+.paramsClass p{
+ margin: 1% 1% 1% 1%;
+  color:black;
+  text-align: left;
+  font-size:larger;
+}
+
+.matrixClass input[type = "number"]{
+  width: 5%;
+}
+.matrixClass select{
+  width: 6%;
+}
+canvas{
+  margin: auto;
+  display: block;
+  border:2px solid #000000;
+}
+.linkClass{
+  text-align: center;
+}
+a:link, a:visited{
+  font-size:200%;
+  margin:auto;
+  padding: 20px;
+}
+
+a:link{
+  color: rgb(116, 109, 180);
+}
+a:visited{
+  color: rgb(133, 185, 209);
+}
